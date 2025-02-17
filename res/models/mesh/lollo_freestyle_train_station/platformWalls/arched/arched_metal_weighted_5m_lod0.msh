@@ -8,23 +8,23 @@ return {
 			indices = {
 				jointWeights = {
 					count = 504,
-					offset = 2908,
+					offset = 2400,
 				},
 				normal = {
 					count = 504,
-					offset = 4420,
+					offset = 3408,
 				},
 				position = {
 					count = 504,
-					offset = 2404,
+					offset = 4416,
 				},
 				tangent = {
 					count = 504,
-					offset = 3412,
+					offset = 2904,
 				},
 				uv0 = {
 					count = 504,
-					offset = 3916,
+					offset = 3912,
 				},
 			},
 			materials = {
@@ -34,23 +34,23 @@ return {
 			indices = {
 				jointWeights = {
 					count = 408,
-					offset = 5332,
+					offset = 4920,
 				},
 				normal = {
 					count = 408,
-					offset = 6556,
+					offset = 5736,
 				},
 				position = {
 					count = 408,
-					offset = 4924,
+					offset = 6552,
 				},
 				tangent = {
 					count = 408,
-					offset = 5740,
+					offset = 5328,
 				},
 				uv0 = {
 					count = 408,
-					offset = 6148,
+					offset = 6144,
 				},
 			},
 			materials = {
@@ -62,27 +62,27 @@ return {
 		jointWeights = {
 			count = 32,
 			numComp = 4,
-			offset = 480,
+			offset = 0,
 		},
 		normal = {
-			count = 492,
+			count = 504,
 			numComp = 3,
-			offset = 1912,
+			offset = 592,
 		},
 		position = {
 			count = 480,
 			numComp = 3,
-			offset = 0,
+			offset = 1920,
 		},
 		tangent = {
-			count = 608,
+			count = 560,
 			numComp = 4,
-			offset = 512,
+			offset = 32,
 		},
 		uv0 = {
-			count = 792,
+			count = 824,
 			numComp = 2,
-			offset = 1120,
+			offset = 1096,
 		},
 	},
 }
