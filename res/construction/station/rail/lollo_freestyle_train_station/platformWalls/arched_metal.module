@@ -1,0 +1,75 @@
+local _constants = require('lollo_freestyle_train_station.constants')
+-- local constructionutil = require "constructionutil"
+local moduleHelpers = require('lollo_freestyle_train_station.moduleHelpers')
+local modulesutil = require "modulesutil"
+local slotHelpers = require('lollo_freestyle_train_station.slotHelpers')
+local transfUtils = require('lollo_freestyle_train_station.transfUtils')
+local transfUtilsUG = require "transf"
+
+
+function data()
+	return {
+		availability = {
+			yearFrom = 0,
+			yearTo = 0
+		},
+		category = {
+			categories = { "platform-deco", },
+		},
+		cost = {
+			price = 0,
+		},
+		description = {
+			name = _("WallArchedMetalName"),
+			description = _("WallArchedMetalDesc"),
+			icon = "ui/lollo_freestyle_train_station/wallArchedMetal.tga"
+		},
+		metadata = { },
+		order = {
+			value = 31,
+		},
+		type = _constants.platformWallModuleType,
+		updateFn = function(result, slotTransf, tag, slotId, addModelFn, params, updateScriptParams)
+			local nTerminal, nTrackEdge, baseId = result.demangleId(slotId)
+			if not nTerminal or not nTrackEdge or not baseId then return end
+
+			local _terminalData = params.terminals[nTerminal]
+			if baseId == _constants.idBases.axialWallSlotId then
+				-- no axial walls for this
+				-- moduleHelpers.deco.doAxialWall(result, slotTransf, tag, slotId, params, nTerminal, _terminalData, nTrackEdge,
+				-- 'lollo_freestyle_train_station/platformWalls/arched/copper_large_rivets_wall_5m.mdl'
+				-- )
+			else
+				local eraPrefix = moduleHelpers.getEraPrefix2(params, nTerminal, _terminalData, nTrackEdge)
+				local pillar_2_5m_modelId = 'lollo_freestyle_train_station/roofs/iron/platformRoofPillar_2_5m.mdl'
+				local pillar_5m_modelId = 'lollo_freestyle_train_station/roofs/iron/platformRoofPillar_5m.mdl'
+				if eraPrefix == moduleHelpers.eras.era_c.prefix then
+					pillar_2_5m_modelId = 'lollo_freestyle_train_station/roofs/concrete_modern/pillar_2_5m.mdl'
+					pillar_5m_modelId = 'lollo_freestyle_train_station/roofs/concrete_modern/pillar_5m.mdl'
+				end
+
+				moduleHelpers.deco.doPlatformWall(result, slotTransf, tag, slotId, params, nTerminal, _terminalData, nTrackEdge,
+				'lollo_freestyle_train_station/platformWalls/arched/copper_large_rivets_wall_5m.mdl',
+				'lollo_freestyle_train_station/platformWalls/arched/copper_large_rivets_wall_5m.mdl', -- this would be the low wall
+				pillar_2_5m_modelId, pillar_5m_modelId,
+				true, true)
+			end
+		end,
+
+		getModelsFn = function(params)
+			local results = {}
+			for x = -2, 2 do
+				results[#results+1] = {
+					id = 'lollo_freestyle_train_station/platformWalls/arched/copper_large_rivets_wall_5m.mdl', -- this would be the low wall
+					transf = {-1, 0, 0, 0,  0, -1, 0, 0,  0, 0, 1, 0,  x, 0, 0, 1},
+				}
+			end
+			results[#results+1] = {
+				id = 'lollo_freestyle_train_station/roofs/iron/platformRoofPillar_2_5m.mdl',
+				transf = {-1, 0, 0, 0,  0, -1, 0, 0,  0, 0, 1, 0,  0, 1.4, -1.3, 1},
+			}
+			results[#results+1] = moduleHelpers.deco.getPreviewIcon(params)
+			return results
+		end
+	}
+end
