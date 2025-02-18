@@ -35,7 +35,7 @@ function data()
 
 			local _terminalData = params.terminals[nTerminal]
 			moduleHelpers.deco.doTrackWall(result, slotTransf, tag, slotId, params, nTerminal, _terminalData, nTrackEdge,
-			'lollo_freestyle_train_station/platformWalls/arched/franz_glass_copper_2_5m.mdl',
+			'lollo_freestyle_train_station/platformWalls/arched/franz_glass_copper_tunnel_2_5m.mdl',
 			'lollo_freestyle_train_station/platformWalls/arched/franz_glass_copper_2_5m.mdl',
 			true)
 		end,
