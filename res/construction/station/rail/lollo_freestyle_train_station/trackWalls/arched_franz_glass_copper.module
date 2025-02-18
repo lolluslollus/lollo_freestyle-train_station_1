@@ -1,0 +1,55 @@
+local _constants = require('lollo_freestyle_train_station.constants')
+-- local constructionutil = require "constructionutil"
+local moduleHelpers = require('lollo_freestyle_train_station.moduleHelpers')
+local modulesutil = require "modulesutil"
+local slotHelpers = require('lollo_freestyle_train_station.slotHelpers')
+local transfUtils = require('lollo_freestyle_train_station.transfUtils')
+local transfUtilsUG = require "transf"
+
+
+function data()
+	return {
+		availability = {
+			yearFrom = 0,
+			yearTo = 0
+		},
+		category = {
+			categories = { "track-deco", },
+		},
+		cost = {
+			price = 0,
+		},
+		description = {
+			name = _("WallArchedFranzGlassCopperName"),
+			description = _("WallArchedFranzGlassCopperDesc"),
+			icon = "ui/lollo_freestyle_train_station/wallArchedFranzGlassCopper.tga"
+		},
+		metadata = { },
+		order = {
+			value = 31,
+		},
+		type = _constants.trackWallModuleType,
+		updateFn = function(result, slotTransf, tag, slotId, addModelFn, params, updateScriptParams)
+			local nTerminal, nTrackEdge, baseId = result.demangleId(slotId)
+			if not nTerminal or not nTrackEdge or not baseId then return end
+
+			local _terminalData = params.terminals[nTerminal]
+			moduleHelpers.deco.doTrackWall(result, slotTransf, tag, slotId, params, nTerminal, _terminalData, nTrackEdge,
+			'lollo_freestyle_train_station/platformWalls/arched/franz_glass_copper_2_5m.mdl',
+			'lollo_freestyle_train_station/platformWalls/arched/franz_glass_copper_5m.mdl',
+			true)
+		end,
+
+		getModelsFn = function(params)
+			local results = {}
+			for x = -2, 2 do
+				results[#results+1] = {
+					id = 'lollo_freestyle_train_station/platformWalls/arched/franz_glass_copper_2_5m.mdl',
+					transf = {-1, 0, 0, 0,  0, -1, 0, 0,  0, 0, 1, 0,  x, 0, 0, 1},
+				}
+			end
+			results[#results+1] = moduleHelpers.deco.getPreviewIcon(params)
+			return results
+		end
+	}
+end

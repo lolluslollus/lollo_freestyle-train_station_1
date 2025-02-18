@@ -20,9 +20,9 @@ function data()
 			price = 0,
 		},
 		description = {
-			name = _("WallArchedMetalName"),
-			description = _("WallArchedMetalDesc"),
-			icon = "ui/lollo_freestyle_train_station/wallArchedMetal.tga"
+			name = _("WallArchedFranzGlassMetal001Name"),
+			description = _("WallArchedFranzGlassMetal001Desc"),
+			icon = "ui/lollo_freestyle_train_station/wallArchedFranzGlassMetal001.tga"
 		},
 		metadata = { },
 		order = {
@@ -49,8 +49,8 @@ function data()
 				end
 
 				moduleHelpers.deco.doPlatformWall(result, slotTransf, tag, slotId, params, nTerminal, _terminalData, nTrackEdge,
-				'lollo_freestyle_train_station/platformWalls/arched/copper_large_rivets_wall_2_5m.mdl',
-				'lollo_freestyle_train_station/platformWalls/arched/copper_large_rivets_wall_2_5m.mdl', -- this would be the low wall
+				'lollo_freestyle_train_station/platformWalls/arched/franz_glass_metal_001_2_5m.mdl',
+				'lollo_freestyle_train_station/platformWalls/arched/franz_glass_metal_001_5m.mdl', -- this would be the low wall
 				pillar_2_5m_modelId, pillar_5m_modelId,
 				true, true)
 			end
@@ -60,7 +60,7 @@ function data()
 			local results = {}
 			for x = -2, 2 do
 				results[#results+1] = {
-					id = 'lollo_freestyle_train_station/platformWalls/arched/copper_large_rivets_wall_2_5m.mdl', -- this would be the low wall
+					id = 'lollo_freestyle_train_station/platformWalls/arched/franz_glass_metal_001_2_5m.mdl', -- this would be the low wall
 					transf = {-1, 0, 0, 0,  0, -1, 0, 0,  0, 0, 1, 0,  x, 0, 0, 1},
 				}
 			end
