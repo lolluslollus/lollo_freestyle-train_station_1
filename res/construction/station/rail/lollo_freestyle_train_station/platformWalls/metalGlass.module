@@ -41,7 +41,7 @@ function data()
 			else
 				-- local _eraPrefix = moduleHelpers.getEraPrefix2(params, nTerminal, _terminalData, nTrackEdge)
 				moduleHelpers.deco.doPlatformWall(result, slotTransf, tag, slotId, params, nTerminal, _terminalData, nTrackEdge,
-				'lollo_freestyle_train_station/platformWalls/metal_glass/platformWall_5m.mdl',
+				'lollo_freestyle_train_station/platformWalls/arched/metal_glass_wall_2_5m.mdl',
 				'lollo_freestyle_train_station/platformWalls/metal_glass/platformWall_low_5m.mdl',
 				'lollo_freestyle_train_station/roofs/metal_glass/platformRoofPillar_2_5m.mdl', 'lollo_freestyle_train_station/roofs/metal_glass/platformRoofPillar_5m.mdl',
 				true)

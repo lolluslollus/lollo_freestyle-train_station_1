@@ -48,8 +48,7 @@ function data()
 				end
 
 				moduleHelpers.deco.doPlatformWall(result, slotTransf, tag, slotId, params, nTerminal, _terminalData, nTrackEdge,
-				-- 'lollo_freestyle_train_station/platformWalls/staccionata_fs_tall/modelled_wall_5m.mdl',
-				_eraPrefix == _constants.eras.era_c.prefix and 'lollo_freestyle_train_station/platformWalls/tiled_large_stripes/wall_5m.mdl' or 'lollo_freestyle_train_station/platformWalls/tiled/platformWall_5m.mdl',
+				'lollo_freestyle_train_station/platformWalls/arched/tunnely_wall_2_5m.mdl',
 				'lollo_freestyle_train_station/platformWalls/staccionata_fs_tall/modelled_wall_5m.mdl',
 				pillar_2_5m_modelId, pillar_5m_modelId,
 				true)

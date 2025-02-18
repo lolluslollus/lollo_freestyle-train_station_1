@@ -2030,7 +2030,7 @@ return {
             end
         end,
         doPlatformWall = function(result, slotTransf, tag, slotId, params, nTerminal, terminalData, nTrackEdge,
-            wall_tunnel_ModelId,
+            wall_in_tunnel_ModelId,
             wall_outside_tunnel_5m_ModelId,
             pillar2_5ModelId, pillar5ModelId,
             isTunnelOk, endWallModelId
@@ -2134,7 +2134,7 @@ return {
                             local skew = wallPosTanX2[2][1][3] - wallPosTanX2[1][1][3]
                             if _isTrackOnPlatformLeft then skew = -skew end
                             wallTransf = transfUtils.getTransf_XSkewedOnZ(wallTransf, skew)
-                            local wallModelId = cpf.type == 2 and wall_tunnel_ModelId or wall_outside_tunnel_5m_ModelId
+                            local wallModelId = cpf.type == 2 and wall_in_tunnel_ModelId or wall_outside_tunnel_5m_ModelId
                             result.models[#result.models+1] = {
                                 id = wallModelId,
                                 tag = tag,

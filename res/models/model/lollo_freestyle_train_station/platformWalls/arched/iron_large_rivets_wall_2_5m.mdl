@@ -32,7 +32,7 @@ function data()
                                 "lollo_freestyle_train_station/metal/iron_w_large_rivets_skinned.mtl",
                                 "lollo_freestyle_train_station/metal/iron_w_large_rivets_skinned.mtl",
                             },
-                            skin = 'lollo_freestyle_train_station/platformWalls/arched/arched_metal_weighted_2_5m_lod0.msh',
+                            skin = 'lollo_freestyle_train_station/platformWalls/arched/arched_metal_weighted_tunnel_2_5m_lod0.msh',
                         },
                     },
                     name = 'RootNode',
