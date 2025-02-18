@@ -1,0 +1,71 @@
+function data()
+    -- copied from material/industry/oil_refinery/era_a/wall_2.mtl
+    return {
+        order = 0,
+        params = {
+            albedo_scale = {
+                albedoScale = { 1, 1, 1, },
+            },
+            fade_out_range = {
+                fadeOutEndDist = 20000,
+                fadeOutStartDist = 10000,
+            },
+            map_albedo = {
+                fileName = "lollo_freestyle_train_station/tube_tiles_white_albedo_bc1.dds",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_metal_gloss_ao = {
+                fileName = "lollo_freestyle_train_station/holloway_tiles_metal_gloss_ao_bc1.dds",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_normal = {
+                fileName = "lollo_freestyle_train_station/tube_tiles_normal_bc5u.dds",
+                redGreen = true,
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_op_1 = {
+                fileName = "models/industry/overlay_textures/big_05.tga",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_op_2 = {
+                fileName = "models/industry/overlay_textures/big_04.tga",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            normal_scale = {
+                normalScale = 1,
+            },
+            operation_1 = {
+                mode = "NORMAL",
+                op = "OVERLAY",
+                opacity = 0.1,
+                scale = { 0.10000000149012, 0.10000000149012, },
+            },
+            operation_2 = {
+                mode = "NORMAL",
+                op = "OVERLAY",
+                opacity = 0.1,
+                scale = { 0.050000000745058, 0.050000000745058, },
+            },
+            polygon_offset = {
+                factor = 0,
+                forceDepthWrite = false,
+                units = 0,
+            },
+            two_sided = {
+                flipNormal = false,
+                twoSided = false,
+            },
+        },
+        type = "SKINNING_PHYS_NRML_MAP_OP",
+    }
+end
