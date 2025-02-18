@@ -1,0 +1,76 @@
+function data()
+    return {
+        order = 0,
+        params = {
+            albedo_scale = {
+                albedoScale = { 1.4, 1.4, 1.4, },
+            },
+            fade_out_range = {
+                fadeOutEndDist = 20000,
+                fadeOutStartDist = 10000,
+            },
+            map_albedo = {
+                -- fileName = "lollo_freestyle_train_station/concrete_001_albedo.dds",
+                fileName = "lollo_freestyle_train_station/concrete_004_albedo.dds",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_metal_gloss_ao = {
+                -- fileName = "lollo_freestyle_train_station/concrete_001_metal_gloss_ao.dds",
+                fileName = "lollo_freestyle_train_station/concrete_004_metal_gloss_ao.dds",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_normal = {
+                -- fileName = "lollo_freestyle_train_station/concrete_001_normal.dds",
+                fileName = "lollo_freestyle_train_station/concrete_004_normal.dds",
+                redGreen = true,
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_op_1 = {
+                fileName = "models/industry/overlay_textures/big_02.tga",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_op_2 = {
+                fileName = "models/industry/overlay_textures/small_08.tga",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            normal_scale = {
+                normalScale = 0.5,
+            },
+            operation_1 = {
+                mode = "WORLD_XY",
+                -- mode = "NORMAL",
+                op = "OVERLAY",
+                opacity = 0.75,
+                scale = { 0.01, 0.01, },
+            },
+            operation_2 = {
+                mode = "WORLD_XY",
+                -- mode = "NORMAL",
+                op = "MULTIPLICATION",
+                opacity = 0.15,
+                scale = { 0.02, 0.02, },
+            },
+            polygon_offset = {
+                factor = 0,
+                forceDepthWrite = false,
+                units = 0,
+            },
+            two_sided = {
+                flipNormal = false,
+                twoSided = false,
+            },
+        },
+        type = "SKINNING_PHYS_NRML_MAP_OP",
+    }
+    end
+    

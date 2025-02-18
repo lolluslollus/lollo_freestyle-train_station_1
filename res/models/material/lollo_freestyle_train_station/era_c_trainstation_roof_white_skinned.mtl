@@ -1,0 +1,70 @@
+function data()
+return {
+	order = 0,
+	params = {
+		albedo_scale = {
+			albedoScale = { 1, 1, 1, },
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+		},
+		map_albedo = {
+			fileName = "models/station/rail/era_c/era_c_trainstation_roof_white_albedo.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_metal_gloss_ao = {
+			fileName = "models/station/rail/era_c/era_c_trainstation_roof_white_metal_gloss_ao.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_normal = {
+			fileName = "models/station/rail/era_c/era_c_trainstation_roof_white_normal.dds",
+			redGreen = true,
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_op_1 = {
+			fileName = "buildings/overlay.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_op_2 = {
+			fileName = "buildings/dirtmap.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		normal_scale = {
+			normalScale = 1,
+		},
+		operation_1 = {
+			mode = "WORLD_XY",
+			op = "NO_OP",
+			opacity = 1,
+			scale = { 0.0099999997764826, 0.0099999997764826, },
+		},
+		operation_2 = {
+			mode = "WORLD_XY",
+			op = "MULTIPLICATION",
+			opacity = 0.44999998807907,
+			scale = { 0.0099999997764826, 0.0099999997764826, },
+		},
+		polygon_offset = {
+			factor = 0,
+			forceDepthWrite = true,
+			units = 0,
+		},
+		two_sided = {
+			flipNormal = true,
+			twoSided = false,
+		},
+	},
+	type = "SKINNING_PHYS_NRML_MAP_OP",
+}
+end

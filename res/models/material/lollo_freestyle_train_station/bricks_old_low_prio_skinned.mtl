@@ -1,0 +1,76 @@
+function data()
+    -- copied from material/industry/oil_refinery/era_a/wall_2.mtl
+    return {
+        order = 0,
+        params = {
+            albedo_scale = {
+                albedoScale = { 1, 1, 1, },
+            },
+            fade_out_range = {
+                fadeOutEndDist = 20000,
+                fadeOutStartDist = 10000,
+            },
+            map_albedo = {
+                fileName = "models/industry/fuel_refinery/era_a/fr_wall_1_albedo.dds",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_metal_gloss_ao = {
+                fileName = "models/industry/fuel_refinery/era_a/fr_wall_1_metal_gloss_ao.dds",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_normal = {
+                fileName = "models/industry/fuel_refinery/era_a/fr_wall_1_normal.dds",
+                redGreen = true,
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+			map_op_1 = {
+                fileName = "models/industry/overlay_textures/big_05.dds",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+            map_op_2 = {
+                fileName = "models/industry/overlay_textures/big_02.dds",
+                type = "TWOD",
+                wrapS = "REPEAT",
+                wrapT = "REPEAT",
+            },
+			normal_scale = {
+				normalScale = 1,
+			},
+			operation_1 = {
+                mode = "WORLD_XY",
+                -- mode = "NORMAL",
+                op = "OVERLAY",
+				-- op = "MULTIPLICATION",
+                opacity = 0.25,
+                scale = { 3.0, 3.0, },
+            },
+            operation_2 = {
+                mode = "WORLD_XY",
+                -- mode = "NORMAL",
+                -- op = "OVERLAY",
+				op = "MULTIPLICATION",
+                opacity = 0.25,
+                scale = { 1.5, 1.5, },
+            },
+            polygon_offset = {
+                factor = 1,
+                forceDepthWrite = true,
+                units = 1,
+            },
+            two_sided = {
+                flipNormal = false,
+                twoSided = false,
+            },
+        },
+        type = "SKINNING_PHYS_NRML_MAP_OP",
+    }
+    end
+    
