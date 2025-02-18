@@ -1,0 +1,115 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, 0, 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				jointWeights = {
+					count = 552,
+					offset = 3280,
+				},
+				normal = {
+					count = 552,
+					offset = 2176,
+				},
+				position = {
+					count = 552,
+					offset = 3832,
+				},
+				tangent = {
+					count = 552,
+					offset = 4384,
+				},
+				uv0 = {
+					count = 552,
+					offset = 2728,
+				},
+			},
+			materials = {
+				"lollo_freestyle_train_station/roofs/concrete/metal.001.mtl", 
+			},
+		}, {
+			indices = {
+				jointWeights = {
+					count = 468,
+					offset = 5872,
+				},
+				normal = {
+					count = 468,
+					offset = 4936,
+				},
+				position = {
+					count = 468,
+					offset = 6340,
+				},
+				tangent = {
+					count = 468,
+					offset = 6808,
+				},
+				uv0 = {
+					count = 468,
+					offset = 5404,
+				},
+			},
+			materials = {
+				"lollo_freestyle_train_station/roofs/concrete/metal_low_prio.001.mtl", 
+			},
+		}, {
+			indices = {
+				jointWeights = {
+					count = 72,
+					offset = 7420,
+				},
+				normal = {
+					count = 72,
+					offset = 7276,
+				},
+				position = {
+					count = 72,
+					offset = 7492,
+				},
+				tangent = {
+					count = 72,
+					offset = 7564,
+				},
+				uv0 = {
+					count = 72,
+					offset = 7348,
+				},
+			},
+			materials = {
+				"lollo_freestyle_train_station/platformWalls/arched/dark.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		jointWeights = {
+			count = 32,
+			numComp = 4,
+			offset = 656,
+		},
+		normal = {
+			count = 528,
+			numComp = 3,
+			offset = 0,
+		},
+		position = {
+			count = 576,
+			numComp = 3,
+			offset = 688,
+		},
+		tangent = {
+			count = 912,
+			numComp = 4,
+			offset = 1264,
+		},
+		uv0 = {
+			count = 128,
+			numComp = 2,
+			offset = 528,
+		},
+	},
+}
+end
