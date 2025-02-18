@@ -1,30 +1,30 @@
 function data()
 return {
 	matConfigs = {
-		{ 0, 0, 0, }, 
+		{ 0, 0, }, 
 	},
 	subMeshes = {
 		{
 			indices = {
 				jointWeights = {
 					count = 288,
-					offset = 1620,
+					offset = 840,
 				},
 				normal = {
 					count = 288,
-					offset = 2484,
+					offset = 1704,
 				},
 				position = {
 					count = 288,
-					offset = 2196,
+					offset = 1416,
 				},
 				tangent = {
 					count = 288,
-					offset = 2772,
+					offset = 1992,
 				},
 				uv0 = {
 					count = 288,
-					offset = 1908,
+					offset = 1128,
 				},
 			},
 			materials = {
@@ -33,50 +33,24 @@ return {
 		}, {
 			indices = {
 				jointWeights = {
-					count = 420,
-					offset = 3060,
-				},
-				normal = {
-					count = 420,
-					offset = 4320,
-				},
-				position = {
-					count = 420,
-					offset = 3900,
-				},
-				tangent = {
-					count = 420,
-					offset = 4740,
-				},
-				uv0 = {
-					count = 420,
-					offset = 3480,
-				},
-			},
-			materials = {
-				"lollo_freestyle_train_station/roofs/concrete/metal_low_prio.001.mtl", 
-			},
-		}, {
-			indices = {
-				jointWeights = {
 					count = 48,
-					offset = 5160,
+					offset = 2280,
 				},
 				normal = {
 					count = 48,
-					offset = 5304,
+					offset = 2424,
 				},
 				position = {
 					count = 48,
-					offset = 5256,
+					offset = 2376,
 				},
 				tangent = {
 					count = 48,
-					offset = 5352,
+					offset = 2472,
 				},
 				uv0 = {
 					count = 48,
-					offset = 5208,
+					offset = 2328,
 				},
 			},
 			materials = {
@@ -91,19 +65,19 @@ return {
 			offset = 0,
 		},
 		normal = {
-			count = 324,
+			count = 216,
 			numComp = 3,
-			offset = 624,
+			offset = 432,
 		},
 		position = {
-			count = 528,
+			count = 336,
 			numComp = 3,
 			offset = 96,
 		},
 		tangent = {
-			count = 672,
+			count = 192,
 			numComp = 4,
-			offset = 948,
+			offset = 648,
 		},
 		uv0 = {
 			count = 64,

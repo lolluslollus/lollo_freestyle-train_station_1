@@ -30,8 +30,7 @@ function data()
                             },
                             skinMaterials = {
                                 'lollo_freestyle_train_station/era_c_trainstation_roof_white_skinned.mtl', -- ribbed
-                                'lollo_freestyle_train_station/lollo_trainstation_wall_white_low_prio_skinned.mtl',
-                                -- 'lollo_freestyle_train_station/lollo_trainstation_wall_white_skinned.mtl', -- bricked edge
+                                -- 'lollo_freestyle_train_station/lollo_trainstation_wall_white_low_prio_skinned.mtl',
                                 'lollo_freestyle_train_station/era_c_trainstation_roof_white_skinned.mtl', -- ribbed
                             },
                             skin = 'lollo_freestyle_train_station/platformWalls/arched/arched_tiles_weighted_tunnel_2_5m_lod0.msh',

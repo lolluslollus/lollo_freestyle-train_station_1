@@ -30,7 +30,7 @@ function data()
                             },
                             skinMaterials = {
                                 'lollo_freestyle_train_station/tunnel_light_rail_ug_skinned.mtl',
-                                'lollo_freestyle_train_station/tunnel_light_rail_ug_low_prio_skinned.mtl',
+                                -- 'lollo_freestyle_train_station/tunnel_light_rail_ug_low_prio_skinned.mtl',
                                 'lollo_freestyle_train_station/tunnel_light_rail_ug_skinned.mtl',
                             },
                             skin = 'lollo_freestyle_train_station/platformWalls/arched/arched_tiles_weighted_tunnel_2_5m_lod0.msh',
