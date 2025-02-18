@@ -36,8 +36,7 @@ function data()
 			local _terminalData = params.terminals[nTerminal]
 			local _eraPrefix = moduleHelpers.getEraPrefix2(params, nTerminal, _terminalData, nTrackEdge)
 			moduleHelpers.deco.doTrackWall(result, slotTransf, tag, slotId, params, nTerminal, _terminalData, nTrackEdge,
-			-- 'lollo_freestyle_train_station/platformWalls/fence_mattoni/square_fence_5m.mdl',
-			_eraPrefix == _constants.eras.era_c.prefix and 'lollo_freestyle_train_station/platformWalls/tiled_large_stripes/wall_5m.mdl' or 'lollo_freestyle_train_station/platformWalls/tiled/platformWall_5m.mdl',
+			'lollo_freestyle_train_station/platformWalls/arched/tiles_wall_2_5m.mdl',
 			'lollo_freestyle_train_station/platformWalls/fence_mattoni/square_fence_5m.mdl',
 			true)
 		end,
