@@ -44,6 +44,19 @@ function data()
                 visibleFrom = 0,
                 visibleTo = 200,
             },
+            {
+                node = {
+                    materials = {
+                        'lollo_freestyle_train_station/tunnel_rail_ug.mtl',
+                        'lollo_freestyle_train_station/tunnel_rail_ug.mtl',
+                    },
+                    mesh = 'lollo_freestyle_train_station/platformWalls/concrete_plain/wall_5m_lod1.msh',
+                    -- transf = {1, 0, 0, 0,  0, 1, 0, 0,  0, 0, 1, 0,  0, 0, 0, 1}
+                },
+                static = false,
+                visibleFrom = 200,
+                visibleTo = 1000,
+            },
         },
         metadata = { },
         version = 1
