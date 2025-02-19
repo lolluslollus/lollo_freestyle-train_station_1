@@ -26,12 +26,27 @@ function data()
                     materials = {
                         'lollo_freestyle_train_station/bricks_old.mtl',
                         'lollo_freestyle_train_station/bricks_old.mtl',
+                        'lollo_freestyle_train_station/bricks_old_low_prio.mtl',
+                        'lollo_freestyle_train_station/bricks_old_low_prio.mtl',
+                    },
+                    mesh = 'lollo_freestyle_train_station/platformWalls/concrete_plain/wall_5m_lod0.msh',
+                    -- transf = {1, 0, 0, 0,  0, 1, 0, 0,  0, 0, 1, 0,  0, 0, 0, 1}
+                },
+                static = false,
+                visibleFrom = 100,
+                visibleTo = 200,
+            },
+            {
+                node = {
+                    materials = {
+                        'lollo_freestyle_train_station/bricks_old.mtl',
+                        'lollo_freestyle_train_station/bricks_old.mtl',
                     },
                     mesh = 'lollo_freestyle_train_station/platformWalls/concrete_plain/wall_5m_lod1.msh',
                     -- transf = {1, 0, 0, 0,  0, 1, 0, 0,  0, 0, 1, 0,  0, 0, 0, 1}
                 },
                 static = false,
-                visibleFrom = 100,
+                visibleFrom = 200,
                 visibleTo = 1000,
             },
         },
