@@ -3,9 +3,10 @@ function data()
 		order = 0,
 		params = {
 			albedo_scale = {
-				albedoScale = { 2.67, 2.8, 3.08, },
+				albedoScale = { 1.5, 1.4, 1.25, },
 				-- albedoScale = { 3.8, 4, 4.4, },
-				-- albedoScale = { 0.95, 1, 1.1, },
+				-- albedoScale = { 1.9, 2, 2.2, },
+				-- albedoScale = { 0.475, 0.5, 0.55, },
 			},
 			fade_out_range = {
 				fadeOutEndDist = 20000,
@@ -13,16 +14,16 @@ function data()
 			},
 			map_albedo = {
 				-- fileName = "tracks/tunnel_rail_wall_01_albedo.dds",
-				-- fileName = "lollo_freestyle_train_station/fences/tunnel_rail_wall_2k_albedo.dds",
-				-- fileName = "lollo_freestyle_train_station/fences/tunnel_rail_wallB_1k_albedo.tga",
-				fileName = "lollo_freestyle_train_station/fences/tunnel_rail_wallB_1k_albedo.dds",
+				-- fileName = "lollo_freestyle_train_station/fences/tunnel_rail_wallB_512_albedo.dds",
+				fileName = "lollo_freestyle_train_station/fences/tunnel_rail_repeat_wall_01_albedo.dds",
 				type = "TWOD",
 				wrapS = "REPEAT",
 				wrapT = "REPEAT",
 			},
 			map_metal_gloss_ao = {
 				-- fileName = "tracks/tunnel_rail_wall_01_metal_gloss_ao.dds",
-				fileName = "lollo_freestyle_train_station/fences/tunnel_rail_wallB_1k_metal_gloss_ao.dds",
+				-- fileName = "lollo_freestyle_train_station/fences/tunnel_rail_wallB_512_metal_gloss_ao.dds",
+				fileName = "lollo_freestyle_train_station/fences/tunnel_rail_repeat_wall_01_metal_gloss_ao.dds",
 				type = "TWOD",
 				wrapS = "REPEAT",
 				wrapT = "REPEAT",
@@ -30,7 +31,8 @@ function data()
 			map_normal = {
 				-- fileName = "tracks/tunnel_rail_wall_01_normal.dds",
 				-- fileName = "lollo_freestyle_train_station/tunnel_rail_wall_01_normal.dds",
-				fileName = "lollo_freestyle_train_station/fences/tunnel_rail_wallB_1k_inverse_normal.dds",
+				-- fileName = "lollo_freestyle_train_station/fences/tunnel_rail_wallB_512_inverse_normal.dds",
+				fileName = "lollo_freestyle_train_station/fences/tunnel_rail_repeat_wall_01_normal.dds",
 				redGreen = true,
 				type = "TWOD",
 				wrapS = "REPEAT",

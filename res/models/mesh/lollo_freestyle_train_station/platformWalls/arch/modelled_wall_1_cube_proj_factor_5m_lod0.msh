@@ -1,0 +1,148 @@
+function data()
+return {
+	matConfigs = {
+		{
+			0, 0, 0, 0, 0, 
+		}, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 468,
+					offset = 4184,
+				},
+				position = {
+					count = 468,
+					offset = 3248,
+				},
+				tangent = {
+					count = 468,
+					offset = 3716,
+				},
+				uv0 = {
+					count = 468,
+					offset = 4652,
+				},
+			},
+			materials = {
+				"lollo_freestyle_train_station/bridge/medium.mtl", 
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 408,
+					offset = 5936,
+				},
+				position = {
+					count = 408,
+					offset = 5120,
+				},
+				tangent = {
+					count = 408,
+					offset = 5528,
+				},
+				uv0 = {
+					count = 408,
+					offset = 6344,
+				},
+			},
+			materials = {
+				"lollo_freestyle_train_station/roofs/iron_glass_copper/high.mtl", 
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 816,
+					offset = 8384,
+				},
+				position = {
+					count = 816,
+					offset = 6752,
+				},
+				tangent = {
+					count = 816,
+					offset = 7568,
+				},
+				uv0 = {
+					count = 816,
+					offset = 9200,
+				},
+			},
+			materials = {
+				"lollo_freestyle_train_station/platformWalls/staccionata_fs/low.mtl", 
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 24,
+					offset = 10064,
+				},
+				position = {
+					count = 24,
+					offset = 10016,
+				},
+				tangent = {
+					count = 24,
+					offset = 10040,
+				},
+				uv0 = {
+					count = 24,
+					offset = 10088,
+				},
+			},
+			materials = {
+				"lollo_freestyle_train_station/platformWalls/arch/horizontal_medium.mtl", 
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 24,
+					offset = 10160,
+				},
+				position = {
+					count = 24,
+					offset = 10112,
+				},
+				tangent = {
+					count = 24,
+					offset = 10136,
+				},
+				uv0 = {
+					count = 24,
+					offset = 10184,
+				},
+			},
+			materials = {
+				"lollo_freestyle_train_station/platformWalls/arch/horizontal_high.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 588,
+			numComp = 3,
+			offset = 1628,
+		},
+		position = {
+			count = 972,
+			numComp = 3,
+			offset = 0,
+		},
+		tangent = {
+			count = 656,
+			numComp = 4,
+			offset = 972,
+		},
+		uv0 = {
+			count = 1032,
+			numComp = 2,
+			offset = 2216,
+		},
+	},
+}
+end
