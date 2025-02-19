@@ -26,10 +26,8 @@ function data()
                     materials = {
                         'lollo_freestyle_train_station/bricks_old.mtl',
                         'lollo_freestyle_train_station/bricks_old.mtl',
-                        'lollo_freestyle_train_station/bricks_old_low_prio.mtl',
-                        'lollo_freestyle_train_station/bricks_old_low_prio.mtl',
                     },
-                    mesh = 'lollo_freestyle_train_station/platformWalls/concrete_plain/wall_5m_lod0.msh',
+                    mesh = 'lollo_freestyle_train_station/platformWalls/concrete_plain/wall_5m_lod1.msh',
                     -- transf = {1, 0, 0, 0,  0, 1, 0, 0,  0, 0, 1, 0,  0, 0, 0, 1}
                 },
                 static = false,
