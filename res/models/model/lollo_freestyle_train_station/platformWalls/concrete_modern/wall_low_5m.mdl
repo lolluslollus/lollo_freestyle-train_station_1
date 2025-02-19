@@ -18,6 +18,19 @@ function data()
                 },
                 static = false,
                 visibleFrom = 0,
+                visibleTo = 200,
+            },
+            {
+                node = {
+                    materials = {
+                        'station/rail/era_c/era_c_trainstation_roof_white.mtl', -- ribbed
+                        'lollo_freestyle_train_station/lollo_trainstation_wall_white.mtl', -- bricked edge
+                    },
+                    mesh = 'lollo_freestyle_train_station/platformWalls/concrete_plain/wall_low_5m_lod1.msh',
+                    -- transf = {1, 0, 0, 0,  0, 1, 0, 0,  0, 0, 1, 0,  0, 0, 0, 1}
+                },
+                static = false,
+                visibleFrom = 200,
                 visibleTo = 1000,
             },
         },
