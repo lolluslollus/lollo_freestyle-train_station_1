@@ -1,30 +1,30 @@
 function data()
 return {
 	matConfigs = {
-		{ 0, 0, 0, }, 
+		{ 0, 0, }, 
 	},
 	subMeshes = {
 		{
 			indices = {
 				jointWeights = {
-					count = 888,
-					offset = 4112,
+					count = 384,
+					offset = 2180,
 				},
 				normal = {
-					count = 888,
-					offset = 5000,
+					count = 384,
+					offset = 2564,
 				},
 				position = {
-					count = 888,
-					offset = 1448,
+					count = 384,
+					offset = 1028,
 				},
 				tangent = {
-					count = 888,
-					offset = 2336,
+					count = 384,
+					offset = 1412,
 				},
 				uv0 = {
-					count = 888,
-					offset = 3224,
+					count = 384,
+					offset = 1796,
 				},
 			},
 			materials = {
@@ -33,50 +33,24 @@ return {
 		}, {
 			indices = {
 				jointWeights = {
-					count = 72,
-					offset = 6104,
+					count = 96,
+					offset = 3236,
 				},
 				normal = {
-					count = 72,
-					offset = 6176,
+					count = 96,
+					offset = 3332,
 				},
 				position = {
-					count = 72,
-					offset = 5888,
+					count = 96,
+					offset = 2948,
 				},
 				tangent = {
-					count = 72,
-					offset = 5960,
+					count = 96,
+					offset = 3044,
 				},
 				uv0 = {
-					count = 72,
-					offset = 6032,
-				},
-			},
-			materials = {
-				"lollo_freestyle_train_station/roofs/concrete/metal_low_prio.001.mtl", 
-			},
-		}, {
-			indices = {
-				jointWeights = {
-					count = 156,
-					offset = 6716,
-				},
-				normal = {
-					count = 156,
-					offset = 6872,
-				},
-				position = {
-					count = 156,
-					offset = 6248,
-				},
-				tangent = {
-					count = 156,
-					offset = 6404,
-				},
-				uv0 = {
-					count = 156,
-					offset = 6560,
+					count = 96,
+					offset = 3140,
 				},
 			},
 			materials = {
@@ -88,27 +62,27 @@ return {
 		jointWeights = {
 			count = 32,
 			numComp = 4,
-			offset = 876,
+			offset = 672,
 		},
 		normal = {
-			count = 540,
+			count = 324,
 			numComp = 3,
-			offset = 908,
+			offset = 704,
 		},
 		position = {
-			count = 540,
+			count = 528,
 			numComp = 3,
 			offset = 0,
 		},
 		tangent = {
-			count = 272,
+			count = 80,
 			numComp = 4,
-			offset = 540,
+			offset = 528,
 		},
 		uv0 = {
 			count = 64,
 			numComp = 2,
-			offset = 812,
+			offset = 608,
 		},
 	},
 }
