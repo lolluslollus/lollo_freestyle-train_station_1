@@ -1,0 +1,27 @@
+function data()
+    -- to make this match a 2_5 wall, add 1.25 to Y
+    local _constants = require('lollo_freestyle_train_station.constants')
+    local _mdlHelpers = require('lollo_freestyle_train_station.mdlHelpers')
+    return {
+        boundingInfo = _mdlHelpers.getVoidBoundingInfo(),
+        collider = _mdlHelpers.getVoidCollider(),
+        lods = {
+            {
+                node = {
+                    materials = {
+                        'lollo_freestyle_train_station/tunnel_rail_ug.mtl',
+                        'lollo_freestyle_train_station/tunnel_rail_ug_high_prio.mtl',
+                        'lollo_freestyle_train_station/tunnel_rail_ug_low_prio.mtl',
+                    },
+                    mesh = 'lollo_freestyle_train_station/trackWalls/behind/wall_base_5m_2m_thick_lod0.msh',
+                    -- transf = {1, 0, 0, 0,  0, 1, 0, 0,  0, 0, 1, 0,  0, 0, 0, 1}
+                },
+                static = false,
+                visibleFrom = 0,
+                visibleTo = 1000,
+            },
+        },
+        metadata = { },
+        version = 1
+    }
+end

@@ -680,6 +680,12 @@ privateFuncs.deco = {
                 wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/concrete_wall_low_5m_2m_thick.mdl'
             elseif wall_low_5m_ModelId == 'lollo_freestyle_train_station/platformWalls/staccionata_fs_tall/modelled_wall_5m.mdl' then
                 wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/concrete_wall_low_5m_2m_thick.mdl'
+            elseif wall_low_5m_ModelId == 'lollo_freestyle_train_station/platformWalls/arched/franz_glass_copper_2_5m.mdl' then
+                wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/tunnely_wall_low_5m_2m_thick.mdl'
+            elseif wall_low_5m_ModelId == 'lollo_freestyle_train_station/platformWalls/arched/franz_glass_metal_001_2_5m.mdl' then
+                wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/tunnely_wall_low_5m_2m_thick.mdl'
+            elseif wall_low_5m_ModelId == 'lollo_freestyle_train_station/platformWalls/arched/franz_glass_metal_002_2_5m.mdl' then
+                wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/tunnely_wall_low_5m_2m_thick.mdl'
             end
         else
             if wall_low_5m_ModelId == 'lollo_freestyle_train_station/platformWalls/tiled/platformWall_low_5m.mdl' then
@@ -714,6 +720,12 @@ privateFuncs.deco = {
                 wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/concrete_wall_low_5m.mdl'
             elseif wall_low_5m_ModelId == 'lollo_freestyle_train_station/platformWalls/staccionata_fs_tall/modelled_wall_5m.mdl' then
                 wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/concrete_wall_low_5m.mdl'
+            elseif wall_low_5m_ModelId == 'lollo_freestyle_train_station/platformWalls/arched/franz_glass_copper_2_5m.mdl' then
+                wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/tunnely_wall_low_5m.mdl'
+            elseif wall_low_5m_ModelId == 'lollo_freestyle_train_station/platformWalls/arched/franz_glass_metal_001_2_5m.mdl' then
+                wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/tunnely_wall_low_5m.mdl'
+            elseif wall_low_5m_ModelId == 'lollo_freestyle_train_station/platformWalls/arched/franz_glass_metal_002_2_5m.mdl' then
+                wallBehindLowModelId = 'lollo_freestyle_train_station/platformWalls/behind/tunnely_wall_low_5m.mdl'
             end
         end
 

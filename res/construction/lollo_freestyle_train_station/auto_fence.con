@@ -233,6 +233,13 @@ function data()
                 } },
             }
 
+            local isWallBehindInTunnels = params.lolloFenceAssets_wallBehindInTunnels == 1
+            local isWallBehindOnBridges = params.lolloFenceAssets_wallBehindOnBridges == 1
+            local isWallBehindThick = (params.lolloFenceAssets_isWallBehindThick == 1)
+            local isDoTerrain = params.lolloFenceAssets_doTerrain == 1 or params.lolloFenceAssets_doTerrain == 2 or params.lolloFenceAssets_doTerrain == 3
+            local isRaiseTerrain = params.lolloFenceAssets_doTerrain == 2
+            local isLowerTerrain = params.lolloFenceAssets_doTerrain == 3
+
             local wallMainModelId = fenceModelHelper.getModels()[params.lolloFenceAssets_model + 1].fileName
             local wallMainModelId_Tunnel = fenceModelHelper.getModels(true)[params.lolloFenceAssets_model + 1].fileName
 
@@ -244,19 +251,33 @@ function data()
             elseif params.lolloFenceAssets_wallEraPrefix == 3 then
                 wallBaseModelId = 'lollo_freestyle_train_station/trackWalls/era_c_wall_base_5m.mdl'
             end
+            local wallBaseModelId_Tunnel = wallBaseModelId or 'lollo_freestyle_train_station/trackWalls/tunnely_wall_base_5m.mdl' -- always add a wall base in tunnels so the walls reach the top
 
             local wallBehindModelId = fenceModelHelper.getWallBehindModels(false, params.lolloFenceAssets_isWallBehindThick == 1)[params.lolloFenceAssets_wallBehindModel + 1].fileName
 
             local wallBehindBaseModelId = nil
             if wallBehindModelId ~= nil then
-                if params.lolloFenceAssets_wallEraPrefix == 1 then
-                    wallBehindBaseModelId = 'lollo_freestyle_train_station/trackWalls/behind/era_a_wall_base_5m.mdl'
-                elseif params.lolloFenceAssets_wallEraPrefix == 2 then
-                    wallBehindBaseModelId = 'lollo_freestyle_train_station/trackWalls/behind/era_b_wall_base_5m.mdl'
-                elseif params.lolloFenceAssets_wallEraPrefix == 3 then
-                    wallBehindBaseModelId = 'lollo_freestyle_train_station/trackWalls/behind/era_c_wall_base_5m.mdl'
+                if isWallBehindThick then
+                    if params.lolloFenceAssets_wallEraPrefix == 1 then
+                        wallBehindBaseModelId = 'lollo_freestyle_train_station/trackWalls/behind/era_a_wall_base_5m_2m_thick.mdl'
+                    elseif params.lolloFenceAssets_wallEraPrefix == 2 then
+                        wallBehindBaseModelId = 'lollo_freestyle_train_station/trackWalls/behind/era_b_wall_base_5m_2m_thick.mdl'
+                    elseif params.lolloFenceAssets_wallEraPrefix == 3 then
+                        wallBehindBaseModelId = 'lollo_freestyle_train_station/trackWalls/behind/era_c_wall_base_5m_2m_thick.mdl'
+                    end
+                else
+                    if params.lolloFenceAssets_wallEraPrefix == 1 then
+                        wallBehindBaseModelId = 'lollo_freestyle_train_station/trackWalls/behind/era_a_wall_base_5m.mdl'
+                    elseif params.lolloFenceAssets_wallEraPrefix == 2 then
+                        wallBehindBaseModelId = 'lollo_freestyle_train_station/trackWalls/behind/era_b_wall_base_5m.mdl'
+                    elseif params.lolloFenceAssets_wallEraPrefix == 3 then
+                        wallBehindBaseModelId = 'lollo_freestyle_train_station/trackWalls/behind/era_c_wall_base_5m.mdl'
+                    end
                 end
             end
+            local wallBehindBaseModelId_Tunnel = wallBehindBaseModelId
+                or (isWallBehindThick and 'lollo_freestyle_train_station/trackWalls/behind/tunnely_wall_base_5m_2m_thick.mdl'
+                    or 'lollo_freestyle_train_station/trackWalls/behind/tunnely_wall_base_5m.mdl')
 
             -- make sure something appears even if the models are all nil, so the costruction will not stay around as a ghost
             logger.print('wallMainModelId =', wallMainModelId, 'wallBaseModelId =', wallBaseModelId, 'wallBehindModelId =', wallBehindModelId)
@@ -282,34 +303,21 @@ function data()
                 return result
             end
 
-            local isWallBehindInTunnels = params.lolloFenceAssets_wallBehindInTunnels == 1
-            local isWallBehindOnBridges = params.lolloFenceAssets_wallBehindOnBridges == 1
-            local isWallBehindThick = (params.lolloFenceAssets_isWallBehindThick == 1)
-            local isDoTerrain = params.lolloFenceAssets_doTerrain == 1 or params.lolloFenceAssets_doTerrain == 2 or params.lolloFenceAssets_doTerrain == 3
-            local isRaiseTerrain = params.lolloFenceAssets_doTerrain == 2
-            local isLowerTerrain = params.lolloFenceAssets_doTerrain == 3
-
-            logger.print('fenceModelId =', wallMainModelId or 'NIL')
-            logger.print('wallBaseModelId =', wallBaseModelId or 'NIL')
-            logger.print('#params.transfs =', #params.transfs)
+            logger.print('wallMainModelId = ' .. tostring(wallMainModelId).. '; wallBaseModelId = ' .. tostring(wallBaseModelId) .. '; #params.transfs = ' .. tostring(#params.transfs))
             local _yStart = fenceModelHelper.getYShiftFineActualValues()[params.lolloFenceAssets_yShiftFine + 1]
             local _zShift = fenceModelHelper.getZShiftActualValues()[params.lolloFenceAssets_zShift + 1] -- it is 0 when the platform height is 0.8, which is the default
-            -- the wall is 1.4m tall, constants.defaultPlatformHeight is 1.2m, so we sink all by 20cm. This is level with freestyle stations and looks good.
-            local _zStart = ((wallBaseModelId == nil) and -0.2 or constants.defaultPlatformHeight) + _zShift
+            -- the wall base is 1.4m tall, constants.defaultPlatformHeight is 1.2m, so we sink all by 20cm. This is level with freestyle stations and looks good.
+            local _zStart = ((wallBaseModelId == nil) and (constants.defaultPlatformHeight - constants.wallBaseHeight) or constants.defaultPlatformHeight) + _zShift
+            local _zStart_Tunnel = (constants.defaultPlatformHeight) + _zShift -- always add a wall base in tunnels so the walls reach the top
             local _zDeltaOutward = 0
             if isLowerTerrain then _zDeltaOutward = (-constants.wallHeight - (wallBaseModelId == nil and 0 or constants.wallBaseHeight)) +0.3 --adjusted to smooth it out a bit
             elseif isRaiseTerrain then _zDeltaOutward = (constants.wallHeight + (wallBaseModelId == nil and 0 or constants.wallBaseHeight)) -0.3 --adjusted to smooth it out a bit
             end
-            logger.print('_yStart =', _yStart or 'NIL')
-            logger.print('_zShift =', _zShift or 'NIL')
-            logger.print('_zStart =', _zStart or 'NIL')
-            -- for _, transf in pairs(params.transfs) do -- compatibility with early releases, newer releases have no transfs
-            --     _addWall(transf, result, _yStart, _zStart, wallMainModelId, wallBaseModelId)
-            -- end
+            logger.print('_yStart = ' .. tostring(_yStart) .. '; _zShift = ' .. tostring(_zShift) .. '; _zStart = ' .. tostring(_zStart))
             for _, transfData in pairs(params.transfs_ground) do
                 if not(transfData.hasLevelCrossing) then
                     if transfData.groundBridgeTunnel_012 == 2 then -- tunnel
-                        _addWall(transfData.transf, result, _yStart, _zStart, wallMainModelId_Tunnel, wallBaseModelId)
+                        _addWall(transfData.transf, result, _yStart, _zStart_Tunnel, wallMainModelId_Tunnel, wallBaseModelId_Tunnel)
                     else -- ground or bridge
                         _addWall(transfData.transf, result, _yStart, _zStart, wallMainModelId, wallBaseModelId)
                     end
@@ -321,9 +329,10 @@ function data()
             for _, transfData in pairs(params.transfs_wallBehind) do
                 if not(transfData.hasLevelCrossing) then
                     if transfData.groundBridgeTunnel_012 == 0
-                    or (transfData.groundBridgeTunnel_012 == 1 and isWallBehindOnBridges)
-                    or (transfData.groundBridgeTunnel_012 == 2 and isWallBehindInTunnels) then
+                    or (transfData.groundBridgeTunnel_012 == 1 and isWallBehindOnBridges) then
                         _addWallBehind(transfData.transf, result, _yStart,_zStart, wallBehindModelId, wallBehindBaseModelId)
+                    elseif (transfData.groundBridgeTunnel_012 == 2 and isWallBehindInTunnels) then
+                        _addWallBehind(transfData.transf, result, _yStart,_zStart_Tunnel, wallBehindModelId, wallBehindBaseModelId_Tunnel)
                     end
                 end
             end
