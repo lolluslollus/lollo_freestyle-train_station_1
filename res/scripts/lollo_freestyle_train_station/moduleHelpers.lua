@@ -2263,10 +2263,7 @@ return {
                             end
 
                             -- add walls across
-                            print('### not(endWallModelId) = ' .. tostring(not(endWallModelId)))
-                            print('### type(endWallModelId) = ' .. tostring(type(endWallModelId)))
                             local _wallAcrossModelId = type(endWallModelId) == 'string' and endWallModelId or wallModelId
-                            print('### _wallAcrossModelId = ' .. tostring(_wallAcrossModelId))
                             if cpf.type ~= 2 then
                                 -- whenever getting in or out of a tunnel, skip altogether
                                 local cpfM1 = ii ~= 1 and _cpfs[ii-1] or nil
