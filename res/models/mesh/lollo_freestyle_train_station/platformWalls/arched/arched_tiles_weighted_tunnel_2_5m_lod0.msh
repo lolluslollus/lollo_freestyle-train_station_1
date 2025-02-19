@@ -7,54 +7,54 @@ return {
 		{
 			indices = {
 				jointWeights = {
-					count = 192,
-					offset = 1140,
+					count = 216,
+					offset = 1668,
 				},
 				normal = {
-					count = 192,
-					offset = 1332,
+					count = 216,
+					offset = 1236,
 				},
 				position = {
-					count = 192,
-					offset = 564,
+					count = 216,
+					offset = 804,
 				},
 				tangent = {
-					count = 192,
-					offset = 756,
+					count = 216,
+					offset = 1020,
 				},
 				uv0 = {
-					count = 192,
-					offset = 948,
+					count = 216,
+					offset = 1452,
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/roofs/concrete/metal.001.mtl", 
+				"lollo_freestyle_train_station/roofs/concrete/tiles.mtl", 
 			},
 		}, {
 			indices = {
 				jointWeights = {
 					count = 48,
-					offset = 1668,
+					offset = 2076,
 				},
 				normal = {
 					count = 48,
-					offset = 1716,
+					offset = 1980,
 				},
 				position = {
 					count = 48,
-					offset = 1524,
+					offset = 1884,
 				},
 				tangent = {
 					count = 48,
-					offset = 1572,
+					offset = 1932,
 				},
 				uv0 = {
 					count = 48,
-					offset = 1620,
+					offset = 2028,
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/platformWalls/arched/dark.mtl", 
+				"lollo_freestyle_train_station/roofs/iron_glass_copper/stripe.mtl", 
 			},
 		}, 
 	},
@@ -62,27 +62,27 @@ return {
 		jointWeights = {
 			count = 32,
 			numComp = 4,
-			offset = 376,
+			offset = 772,
 		},
 		normal = {
-			count = 156,
+			count = 180,
 			numComp = 3,
-			offset = 408,
+			offset = 336,
 		},
 		position = {
-			count = 264,
+			count = 288,
 			numComp = 3,
 			offset = 0,
 		},
 		tangent = {
 			count = 48,
 			numComp = 4,
-			offset = 264,
+			offset = 288,
 		},
 		uv0 = {
-			count = 64,
+			count = 256,
 			numComp = 2,
-			offset = 312,
+			offset = 516,
 		},
 	},
 }
