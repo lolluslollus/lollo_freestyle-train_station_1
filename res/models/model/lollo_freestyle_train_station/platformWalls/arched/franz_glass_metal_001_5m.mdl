@@ -30,7 +30,7 @@ function data()
                             },
                             skinMaterials = {
                                 'lollo_freestyle_train_station/metal/franz_glass_metal_001_skinned.mtl',
-                                'lollo_freestyle_train_station/metal/franz_glass_metal_001_skinned.mtl',
+                                -- 'lollo_freestyle_train_station/metal/franz_glass_metal_001_skinned.mtl',
                                 'lollo_freestyle_train_station/metal/franz_glass_metal_001_skinned.mtl',
                             },
                             skin = 'lollo_freestyle_train_station/platformWalls/arched/franz_arched_tiles_weighted_5m_lod0.msh',
