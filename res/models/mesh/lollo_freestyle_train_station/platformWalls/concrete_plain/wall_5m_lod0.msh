@@ -10,11 +10,11 @@ return {
 			indices = {
 				normal = {
 					count = 96,
-					offset = 1168,
+					offset = 1264,
 				},
 				position = {
 					count = 96,
-					offset = 1264,
+					offset = 976,
 				},
 				tangent = {
 					count = 96,
@@ -22,22 +22,22 @@ return {
 				},
 				uv0 = {
 					count = 96,
-					offset = 976,
+					offset = 1168,
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/bridge/dark.mtl", 
+				"lollo_freestyle_train_station/bridge/dark.002.mtl", 
 			},
 		},
 		{
 			indices = {
 				normal = {
 					count = 192,
-					offset = 1744,
+					offset = 1936,
 				},
 				position = {
 					count = 192,
-					offset = 1936,
+					offset = 1360,
 				},
 				tangent = {
 					count = 192,
@@ -45,7 +45,7 @@ return {
 				},
 				uv0 = {
 					count = 192,
-					offset = 1360,
+					offset = 1744,
 				},
 			},
 			materials = {
@@ -56,11 +56,11 @@ return {
 			indices = {
 				normal = {
 					count = 48,
-					offset = 2224,
+					offset = 2272,
 				},
 				position = {
 					count = 48,
-					offset = 2272,
+					offset = 2128,
 				},
 				tangent = {
 					count = 48,
@@ -68,7 +68,7 @@ return {
 				},
 				uv0 = {
 					count = 48,
-					offset = 2128,
+					offset = 2224,
 				},
 			},
 			materials = {
@@ -79,11 +79,11 @@ return {
 			indices = {
 				normal = {
 					count = 96,
-					offset = 2512,
+					offset = 2608,
 				},
 				position = {
 					count = 96,
-					offset = 2608,
+					offset = 2320,
 				},
 				tangent = {
 					count = 96,
@@ -91,7 +91,7 @@ return {
 				},
 				uv0 = {
 					count = 96,
-					offset = 2320,
+					offset = 2512,
 				},
 			},
 			materials = {
@@ -103,22 +103,22 @@ return {
 		normal = {
 			count = 144,
 			numComp = 3,
-			offset = 544,
+			offset = 832,
 		},
 		position = {
 			count = 288,
 			numComp = 3,
-			offset = 688,
+			offset = 0,
 		},
 		tangent = {
 			count = 160,
 			numComp = 4,
-			offset = 384,
+			offset = 288,
 		},
 		uv0 = {
 			count = 384,
 			numComp = 2,
-			offset = 0,
+			offset = 448,
 		},
 	},
 }
