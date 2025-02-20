@@ -1,0 +1,32 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.039463996887, 8.9928674697876, 10.792720794678, },
+		bbMin = { -0.49393400549889, -8.9928674697876, -0.78411000967026, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "railroad/tunnel_double_old.mtl", },
+						mesh = "railroad/lod_0_tunnel_double_old.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 3430,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
