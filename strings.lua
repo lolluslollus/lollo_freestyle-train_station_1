@@ -634,6 +634,9 @@ Lifts, stairs and underground entrances are in the assets, search for "freestyle
 
 			-- pin with message
 			["UnsnappedSomethingMessage"] = "Message: broken connection",
+
+			-- tunnel
+			["EraATunnel"] = "Era A Tunnel",
 		},
 		de = {
 			["DESC"] = [[
@@ -1267,6 +1270,9 @@ Aufzüge, Treppen und unterirdische Eingänge findest du in den Assets, suche na
 
 			-- pin with message
 			["UnsnappedSomethingMessage"] = "Meldung: kaputte Verbindung",
+
+			-- tunnel
+			["EraATunnel"] = "Epoche A Tunnel",
 		},
 	}
 end
