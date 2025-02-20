@@ -45,42 +45,42 @@ function data()
 						},
 						{
 							materials = {
-								'lollo_freestyle_train_station/tunnel_rail_ug_low_prio.mtl',
+								'lollo_freestyle_train_station/tunnel_light_rail_ug_low_prio.mtl',
 							},
 							mesh = 'lollo_freestyle_train_station/tunnel/era_a_tunnel_half_body_horizontal_top_lod0.msh',
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{
 							materials = {
-								'lollo_freestyle_train_station/tunnel_rail_ug_low_prio.mtl',
+								'lollo_freestyle_train_station/tunnel_light_rail_ug_low_prio.mtl',
 							},
 							mesh = 'lollo_freestyle_train_station/tunnel/era_a_tunnel_half_body_horizontal_top_lod0.msh',
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 2.5, 0, 1, },
 						},
 						{
 							materials = {
-								'lollo_freestyle_train_station/tunnel_rail_ug_low_prio.mtl',
+								'lollo_freestyle_train_station/tunnel_light_rail_ug_low_prio.mtl',
 							},
 							mesh = 'lollo_freestyle_train_station/tunnel/era_a_tunnel_half_body_horizontal_bottom_lod0.msh',
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{
 							materials = {
-								'lollo_freestyle_train_station/tunnel_rail_ug_low_prio.mtl',
+								'lollo_freestyle_train_station/tunnel_light_rail_ug_low_prio.mtl',
 							},
 							mesh = 'lollo_freestyle_train_station/tunnel/era_a_tunnel_half_body_horizontal_bottom_lod0.msh',
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 2.5, 0, 1, },
 						},
 						{
 							materials = {
-								'lollo_freestyle_train_station/tunnel_rail_ug_low_prio.mtl',
+								'lollo_freestyle_train_station/tunnel_light_rail_ug_low_prio.mtl',
 							},
 							mesh = 'lollo_freestyle_train_station/tunnel/era_a_tunnel_body_vertical_left_lod0.msh',
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, -3.3, 0, 1, },
 						},
 						{
 							materials = {
-								'lollo_freestyle_train_station/tunnel_rail_ug_low_prio.mtl',
+								'lollo_freestyle_train_station/tunnel_light_rail_ug_low_prio.mtl',
 							},
 							mesh = 'lollo_freestyle_train_station/tunnel/era_a_tunnel_body_vertical_right_lod0.msh',
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 3.3, 0, 1, },
