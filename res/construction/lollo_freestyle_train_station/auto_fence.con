@@ -254,6 +254,7 @@ function data()
             local wallBaseModelId_Tunnel = wallBaseModelId or 'lollo_freestyle_train_station/trackWalls/tunnely_wall_base_5m.mdl' -- always add a wall base in tunnels so the walls reach the top
 
             local wallBehindModelId = fenceModelHelper.getWallBehindModels(false, params.lolloFenceAssets_isWallBehindThick == 1)[params.lolloFenceAssets_wallBehindModel + 1].fileName
+            local wallBehindModelId_Tunnel = fenceModelHelper.getWallBehindModels(true, params.lolloFenceAssets_isWallBehindThick == 1)[params.lolloFenceAssets_wallBehindModel + 1].fileName
 
             local wallBehindBaseModelId = nil
             if wallBehindModelId ~= nil then
@@ -308,7 +309,7 @@ function data()
             local _zShift = fenceModelHelper.getZShiftActualValues()[params.lolloFenceAssets_zShift + 1] -- it is 0 when the platform height is 0.8, which is the default
             -- the wall base is 1.4m tall, constants.defaultPlatformHeight is 1.2m, so we sink all by 20cm. This is level with freestyle stations and looks good.
             local _zStart = ((wallBaseModelId == nil) and (constants.defaultPlatformHeight - constants.wallBaseHeight) or constants.defaultPlatformHeight) + _zShift
-            local _zStart_Tunnel = (constants.defaultPlatformHeight) + _zShift -- always add a wall base in tunnels so the walls reach the top
+            local _zStart_Tunnel = (constants.defaultPlatformHeight) -- in tunnels, always add a wall base and ignore platform heights, so the walls reach the top
             local _zDeltaOutward = 0
             if isLowerTerrain then _zDeltaOutward = (-constants.wallHeight - (wallBaseModelId == nil and 0 or constants.wallBaseHeight)) +0.3 --adjusted to smooth it out a bit
             elseif isRaiseTerrain then _zDeltaOutward = (constants.wallHeight + (wallBaseModelId == nil and 0 or constants.wallBaseHeight)) -0.3 --adjusted to smooth it out a bit
@@ -332,7 +333,7 @@ function data()
                     or (transfData.groundBridgeTunnel_012 == 1 and isWallBehindOnBridges) then
                         _addWallBehind(transfData.transf, result, _yStart,_zStart, wallBehindModelId, wallBehindBaseModelId)
                     elseif (transfData.groundBridgeTunnel_012 == 2 and isWallBehindInTunnels) then
-                        _addWallBehind(transfData.transf, result, _yStart,_zStart_Tunnel, wallBehindModelId, wallBehindBaseModelId_Tunnel)
+                        _addWallBehind(transfData.transf, result, _yStart,_zStart_Tunnel, wallBehindModelId_Tunnel, wallBehindBaseModelId_Tunnel)
                     end
                 end
             end

@@ -27,7 +27,7 @@ privateValues.defaults = {
     -- lolloFenceAssets_buildOnFrozenEdges = 0,
     lolloFenceAssets_doTerrain = 1,
     lolloFenceAssets_isWallBehindThick = 0,
-    lolloFenceAssets_isWallTall = 0,
+    -- lolloFenceAssets_isWallTall = 0,
     lolloFenceAssets_length = 9,
     lolloFenceAssets_model = 15,
     lolloFenceAssets_wallEraPrefix = 1,
@@ -316,13 +316,13 @@ return {
                 uiType = 'BUTTON',
                 values = privateFuncs.getZShiftDisplayValues(),
             },
-            {
-                defaultIndex = privateValues.defaults.lolloFenceAssets_isWallTall,
-                key = 'lolloFenceAssets_isWallTall',
-                name = _('IsWallTall'),
-                uiType = 'BUTTON',
-                values = {_('NO'), _('YES')}
-            },
+            -- {
+            --     defaultIndex = privateValues.defaults.lolloFenceAssets_isWallTall,
+            --     key = 'lolloFenceAssets_isWallTall',
+            --     name = _('IsWallTall'),
+            --     uiType = 'BUTTON',
+            --     values = {_('NO'), _('YES')}
+            -- },
         }
     end,
     getChangeableParamsMetadata = function()

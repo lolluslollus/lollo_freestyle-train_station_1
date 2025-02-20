@@ -183,7 +183,7 @@ function data()
                 local defaults = fenceModelHelper.getDefaultIndexes()
                 params.lolloFenceAssets_doTerrain = params.lolloFenceAssets_doTerrain or defaults.lolloFenceAssets_doTerrain
                 params.lolloFenceAssets_isWallBehindThick = params.lolloFenceAssets_isWallBehindThick or defaults.lolloFenceAssets_isWallBehindThick
-                params.lolloFenceAssets_isWallTall = params.lolloFenceAssets_isWallTall or defaults.lolloFenceAssets_isWallTall
+                -- params.lolloFenceAssets_isWallTall = params.lolloFenceAssets_isWallTall or defaults.lolloFenceAssets_isWallTall
                 params.lolloFenceAssets_length = params.lolloFenceAssets_length or defaults.lolloFenceAssets_length
                 params.lolloFenceAssets_model = params.lolloFenceAssets_model or defaults.lolloFenceAssets_model
                 params.lolloFenceAssets_wallEraPrefix = params.lolloFenceAssets_wallEraPrefix or defaults.lolloFenceAssets_wallEraPrefix
@@ -302,10 +302,12 @@ function data()
                 local isRaiseTerrain = params.lolloFenceAssets_doTerrain == 2
                 local isLowerTerrain = params.lolloFenceAssets_doTerrain == 3
                 local isWallBehindThick = (params.lolloFenceAssets_isWallBehindThick == 1)
-                local wallMainModelId = fenceModelHelper.getModels(params.lolloFenceAssets_isWallTall == 1)[params.lolloFenceAssets_model + 1].fileName
+                -- local wallMainModelId = fenceModelHelper.getModels(params.lolloFenceAssets_isWallTall == 1)[params.lolloFenceAssets_model + 1].fileName
+                local wallMainModelId = fenceModelHelper.getModels(false)[params.lolloFenceAssets_model + 1].fileName
                 local wallBaseModelId = _getWallBaseModelId()
                 local wallBehindBaseModelId = _getWallBehindBaseModelId()
-                local wallBehindModelId = fenceModelHelper.getWallBehindModels(params.lolloFenceAssets_isWallTall == 1, params.lolloFenceAssets_isWallBehindThick == 1)[params.lolloFenceAssets_wallBehindModel + 1].fileName
+                -- local wallBehindModelId = fenceModelHelper.getWallBehindModels(params.lolloFenceAssets_isWallTall == 1, params.lolloFenceAssets_isWallBehindThick == 1)[params.lolloFenceAssets_wallBehindModel + 1].fileName
+                local wallBehindModelId = fenceModelHelper.getWallBehindModels(false, params.lolloFenceAssets_isWallBehindThick == 1)[params.lolloFenceAssets_wallBehindModel + 1].fileName
                 logger.print('_addModels got isDoTerrain =', isDoTerrain,
                     'wallMainModelId =', wallMainModelId or 'NIL',
                     'wallBaseModelId =', wallBaseModelId or 'NIL',
