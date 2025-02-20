@@ -58,6 +58,7 @@ Lifts, stairs and underground entrances are in the assets, search for "freestyle
 - Walls around tracks are only available on terminals built with version 1.99 or newer.
 - Minor version 1.115 removed links from flush exits at the end of platforms, to avoid crashes. It also replaced older lifts and twin stairs (assets) with new ones.
 - Minor Version 1.141 introduces head stations. Older platforms have no head option unless you destroy and rebuild them.
+- Minor Version 1.156 introduces thick walls and dams. Existing station walls or fences might suddenly receive a thick wall and cause trouble. Use the new module "Remove Terminal Deco" and then rebuild your deco.
 
 [h1]Known issues:[/h1]
 - Module placement is rather free, the player is allowed to do some unrealistic things. Proper checks would be too expensive.
@@ -690,6 +691,7 @@ Aufzüge, Treppen und unterirdische Eingänge findest du in den Assets, suche na
 - Mauern um Gleise sind nur auf Terminals verfügbar, die mit Version 1.99 oder neuer gebaut wurden.
 - Mit der Minor-Version 1.115 werden bündige Ausgänge an den Bahnsteigenden nicht mehr verbunden, um Abstürze zu vermeiden. Ältere Aufzug- und Zwillingstreppen-Assets wurden auch ersetzt.
 - Mit der Minor-Version 1.141 werden Kopfbahnhöfe hinzugefügt. Ältere Terminals bekommen keine Kopf-Option, wenn du sie nicht abreisst und neu baust.
+- Mit der Minor-Version 1.156 werden dicke Mauer hinzugefügt. Bestehende Bahnhofsmauer oder -Zäune bekommen möglicherweise eine dicke Wand und verursachen weitere Probleme. Verwende das neue Modul "Entferne Bahnsteig Deko" und baue deine Deko dann wieder.
 
 [h1]Bekannte Probleme:[/h1]
 - Die Platzierung der Module ist ziemlich frei, der Spieler darf einige unrealistische Dinge tun. Richtige Kontrollen wären zu teuer.
