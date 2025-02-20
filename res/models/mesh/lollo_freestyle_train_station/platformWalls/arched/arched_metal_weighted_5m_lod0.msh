@@ -28,7 +28,7 @@ return {
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/roofs/concrete/metal.001.mtl", 
+				"lollo_freestyle_train_station/metal/copper_w_large_rivets.mtl",
 			},
 		}, {
 			indices = {
@@ -54,7 +54,7 @@ return {
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/roofs/concrete/metal_low_prio.001.mtl", 
+				"lollo_freestyle_train_station/metal/copper_w_large_rivets.mtl",
 			},
 		}, 
 	},

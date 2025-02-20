@@ -1,60 +1,86 @@
 function data()
 return {
 	matConfigs = {
-		{ 0, 0, }, 
+		{ 0, 0, 0, }, 
 	},
 	subMeshes = {
 		{
 			indices = {
 				jointWeights = {
-					count = 624,
-					offset = 4384,
+					count = 432,
+					offset = 2320,
 				},
 				normal = {
-					count = 624,
-					offset = 3136,
+					count = 432,
+					offset = 3616,
 				},
 				position = {
-					count = 624,
-					offset = 1888,
+					count = 432,
+					offset = 2752,
 				},
 				tangent = {
-					count = 624,
-					offset = 2512,
+					count = 432,
+					offset = 1888,
 				},
 				uv0 = {
-					count = 624,
-					offset = 3760,
+					count = 432,
+					offset = 3184,
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/roofs/concrete/tiles.mtl", 
+				'lollo_freestyle_train_station/tube_tiles_creamy.mtl',
 			},
 		}, {
 			indices = {
 				jointWeights = {
 					count = 96,
-					offset = 5392,
+					offset = 4144,
 				},
 				normal = {
 					count = 96,
-					offset = 5200,
+					offset = 4432,
 				},
 				position = {
 					count = 96,
-					offset = 5008,
+					offset = 4240,
 				},
 				tangent = {
 					count = 96,
-					offset = 5104,
+					offset = 4048,
 				},
 				uv0 = {
 					count = 96,
-					offset = 5296,
+					offset = 4336,
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/roofs/iron_glass_copper/stripe.mtl", 
+				'lollo_freestyle_train_station/lollo_trainstation_wall_white.mtl', -- bricked edge
+			},
+		}, {
+			indices = {
+				jointWeights = {
+					count = 192,
+					offset = 4720,
+				},
+				normal = {
+					count = 192,
+					offset = 5296,
+				},
+				position = {
+					count = 192,
+					offset = 4912,
+				},
+				tangent = {
+					count = 192,
+					offset = 4528,
+				},
+				uv0 = {
+					count = 192,
+					offset = 5104,
+				},
+			},
+			materials = {
+				'lollo_freestyle_train_station/lollo_trainstation_wall_white.mtl', -- bricked edge
 			},
 		}, 
 	},
@@ -62,27 +88,27 @@ return {
 		jointWeights = {
 			count = 32,
 			numComp = 4,
-			offset = 1856,
+			offset = 256,
 		},
 		normal = {
 			count = 516,
 			numComp = 3,
-			offset = 964,
+			offset = 1372,
 		},
 		position = {
 			count = 708,
 			numComp = 3,
-			offset = 0,
+			offset = 288,
 		},
 		tangent = {
 			count = 256,
 			numComp = 4,
-			offset = 708,
+			offset = 0,
 		},
 		uv0 = {
 			count = 376,
 			numComp = 2,
-			offset = 1480,
+			offset = 996,
 		},
 	},
 }

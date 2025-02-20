@@ -28,7 +28,7 @@ return {
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/roofs/concrete/tiles.mtl", 
+				'lollo_freestyle_train_station/tube_tiles_creamy.mtl',
 			},
 		}, {
 			indices = {
@@ -54,7 +54,7 @@ return {
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/roofs/iron_glass_copper/stripe.mtl", 
+				'lollo_freestyle_train_station/lollo_trainstation_wall_white.mtl', -- bricked edge
 			},
 		}, 
 	},

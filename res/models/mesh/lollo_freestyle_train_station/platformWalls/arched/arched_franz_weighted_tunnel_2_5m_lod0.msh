@@ -28,7 +28,7 @@ return {
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/roofs/concrete/glass.mtl", 
+				'lollo_freestyle_train_station/metal/franz_glass_copper.mtl',
 			},
 		}, {
 			indices = {
@@ -54,7 +54,7 @@ return {
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/platformWalls/arched/dark.mtl", 
+				'lollo_freestyle_train_station/metal/franz_glass_copper.mtl',
 			},
 		}, {
 			indices = {
@@ -80,7 +80,7 @@ return {
 				},
 			},
 			materials = {
-				"lollo_freestyle_train_station/platformWalls/arched/metal.mtl", 
+				'lollo_freestyle_train_station/metal/copper_w_large_rivets.mtl',
 			},
 		}, 
 	},
